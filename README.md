@@ -45,6 +45,12 @@ English: https://www.youtube.com/watch?v=u2O082hDafs
 		make -j4
 		sudo make install
 
+		Check version:
+  		gphoto2 --version
+		
+  		Detect camera:
+    		gphoto2 --auto-detect
+
 	Step 5:
 		Download the python script detection.py from:
 		https://github.com/romanpon/rpi_camera_sensor
