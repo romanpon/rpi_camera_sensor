@@ -37,8 +37,13 @@ try:
             last_motion_time = now
 
             if not recording:
-                print(f"Starting recording at {now}")
+                # 1) shutter press to wake up the camera
+                print("Pressing shutter…")
+                subprocess.call(["gphoto2", "--capture-image"])
+                time.sleep(1)
+        
                 # start recording indefinitely
+                print(f"Starting recording at {now}")
                 subprocess.call(["gphoto2", "--set-config", "movie=1"])
                 recording = True
 
