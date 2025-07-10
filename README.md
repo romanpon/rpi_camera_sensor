@@ -15,6 +15,7 @@ English: https://www.youtube.com/watch?v=u2O082hDafs
 		
 	Step 2:
 		Make sure it is updated:
+  		ssh pi@raspberrypi.local (default password raspberry)
 		sudo apt-get update
 		sudo apt-get upgrade
 		
@@ -26,11 +27,30 @@ English: https://www.youtube.com/watch?v=u2O082hDafs
 		Install gphoto2 lib with this one line command:
 		wget https://raw.githubusercontent.com/gonzalo/gphoto2-updater/master/gphoto2-updater.sh && chmod +x gphoto2-updater.sh && sudo ./gphoto2-updater.sh
 		More info: http://gphoto.sourceforge.net/
-		
+  	Manual alternative:
+   		Build and install libgphoto2:
+		cd ~
+		git clone https://github.com/gphoto/libgphoto2.git
+		cd libgphoto2
+		./autogen.sh
+		make -j4
+		sudo make install
+		sudo ldconfig
+
+		Build and install gphoto2:
+  		cd ~
+		git clone https://github.com/gphoto/gphoto2.git
+		cd gphoto2
+		./autogen.sh
+		make -j4
+		sudo make install
+
 	Step 5:
 		Download the python script detection.py from:
 		https://github.com/romanpon/rpi_camera_sensor
-		
+	  	git clone https://github.com/romanpon/rpi_camera_sensor.git
+    
 	Step 6:
 		Run the script:
+  		cd rpi_camera_sensor
 		python ./detection.py
