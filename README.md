@@ -59,4 +59,4 @@ English: https://www.youtube.com/watch?v=u2O082hDafs
 	Step 6:
 		Run the script:
   		cd rpi_camera_sensor
-		python ./detection.py
+		python3 ./detection.py
