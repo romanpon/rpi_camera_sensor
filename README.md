@@ -15,7 +15,7 @@ English: https://www.youtube.com/watch?v=u2O082hDafs
 		
 	Step 2:
 		Make sure it is updated:
-  		ssh pi@raspberrypi.local (default password raspberry)
+  		ssh pi@raspberrypi.local (default password raspberry, need to wait 1-2 minutes after powering up)
 		sudo apt-get update
 		sudo apt-get upgrade
 		
