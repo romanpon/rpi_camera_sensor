@@ -29,7 +29,7 @@ English: https://www.youtube.com/watch?v=u2O082hDafs
 		
 	Step 5:
 		Download the python script detection.py from:
-		https://github.com/seesunmoon/rpi_camera_sensor
+		https://github.com/romanpon/rpi_camera_sensor
 		
 	Step 6:
 		Run the script:
